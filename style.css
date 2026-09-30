@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: #050505;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    max-width: 850px;
+    margin: auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.robot {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+h1 span {
+    color: #ff2020;
+}
+
+.subtitle {
+    color: #aaa;
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+.chat-box {
+    display: flex;
+    gap: 10px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.chat-box input {
+    flex: 1;
+    padding: 16px;
+    border: 1px solid #333;
+    border-radius: 12px;
+    background: #111;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+.chat-box input:focus {
+    border-color: #ff2020;
+}
+
+.chat-box button {
+    padding: 16px 25px;
+    border: none;
+    border-radius: 12px;
+    background: #ff2020;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.chat-box button:hover {
+    background: #d90000;
+}
+
+.quick-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.quick-buttons button {
+    padding: 11px 18px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    background: #111;
+    color: white;
+    cursor: pointer;
+}
+
+.quick-buttons button:hover {
+    border-color: #ff2020;
+    color: #ff2020;
+}
+
+#response {
+    max-width: 700px;
+    margin: 25px auto 0;
+    padding: 18px;
+    border-radius: 12px;
+    background: #111;
+    color: #ddd;
+    text-align: left;
+    min-height: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-size: 14px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .container {
+        padding: 30px 15px;
+    }
+
+    .robot {
+        font-size: 55px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .subtitle {
+        font-size: 17px;
+    }
+
+    .chat-box {
+        flex-direction: column;
+    }
+
+    .chat-box input,
+    .chat-box button {
+        width: 100%;
+    }
+
+    .quick-buttons button {
+        flex: 1 1 100%;
+    }
+}
